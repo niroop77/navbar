@@ -8,23 +8,34 @@
 </head>
 <body>
 
+  <!-- Theme Toggle Icon (Top Right) -->
+
   <!-- Navbar HTML -->
   <nav class="navbar">
-    <div class="nav-brand">MySite</div>
-    <button class="nav-toggle" id="navToggle">☰</button>
-    <ul class="nav-menu" id="navMenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="nav-brand">MySite</div>
+
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle Theme">🌙</button>
+</nav>
+
 
   <!-- Header Image HTML -->
   <header id="headerImage">
     <img src="images/header.jpg" alt="Header Image">
   </header>
 
+  <!-- Div After Header -->
+  <div class="theme-info">
+      <p>The theme toggle is active. Switch between light and dark mode!</p>
+  </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>

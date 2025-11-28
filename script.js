@@ -5,6 +5,34 @@ toggle.onclick = function() {
   menu.classList.toggle("active");
   toggle.innerHTML = menu.classList.contains("active") ? "✖" : "☰";
 };
+//  Theme Toggle Script --
+  
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      // Load saved theme
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'dark') {
+          body.classList.add('dark-mode');
+          themeToggle.textContent = "☀️";
+      } else {
+          themeToggle.textContent = "🌙";
+      }
+
+      // Toggle theme
+      themeToggle.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+
+          if (body.classList.contains('dark-mode')) {
+              localStorage.setItem('theme', 'dark');
+              themeToggle.textContent = "☀️";
+          } else {
+              localStorage.setItem('theme', 'light');
+              themeToggle.textContent = "🌙";
+          }
+      });
+    });
 
 
 

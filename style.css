@@ -99,3 +99,50 @@
   border-bottom-right-radius: 8px;
 }
 
+/* Toggle icon at top */
+.theme-toggle-top {
+  position: fixed;
+  top: 70px;   /* moved below navbar height */
+  right: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+}
+.theme-toggle-nav {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Div below header */
+.theme-info {
+  padding: 15px;
+  background-color: #f0f0f0;
+  margin: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Dark mode base */
+body.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+/* Dark mode for theme-info */
+body.dark-mode .theme-info {
+  background-color: #333;
+  border-color: #555;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
