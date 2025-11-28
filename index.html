@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Header</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar + Floating Theme Toggle</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Theme Toggle Icon (Top Right) -->
+  <!-- FLOATING THEME TOGGLE BUTTON -->
+  <button id="theme-toggle" class="floating-theme-toggle" aria-label="Toggle Theme">🌙</button>
 
-  <!-- Navbar HTML -->
+  <!-- NAVBAR -->
   <nav class="navbar">
-  <div class="nav-brand">MySite</div>
+    <div class="nav-brand">MySite</div>
 
-  <ul class="nav-menu" id="navMenu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
 
-  <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle Theme">🌙</button>
-</nav>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-links"><a href="#">Home</a></li>
+      <li class="nav-links"><a href="#">About</a></li>
+      <li class="nav-links"><a href="#">Services</a></li>
+      <li class="nav-links"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-
-  <!-- Header Image HTML -->
+  <!-- HEADER IMAGE -->
   <header id="headerImage">
-    <img src="images/header.jpg" alt="Header Image">
+    <img src="images/header.jpg" alt="Header Image" />
   </header>
 
-  <!-- Div After Header -->
+  <!-- CONTENT -->
   <div class="theme-info">
-      <p>The theme toggle is active. Switch between light and dark mode!</p>
+    <p>The floating theme toggle is active. Switch between light and dark mode!</p>
+  </div>
+  <div class="theme-info">
+    <p>The floating theme toggle is active. Switch between light and dark mode!</p>
+  </div>
+  <div class="theme-info">
+    <p>The floating theme toggle is active. Switch between light and dark mode!</p>
   </div>
 
+  <!-- JS -->
   <script src="script.js"></script>
-
 </body>
 </html>
